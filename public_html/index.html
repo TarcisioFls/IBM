@@ -18,29 +18,62 @@ and open the template in the editor.
             <header>                
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
-                        <div class="collapse navbar-collapse">
+                        <div class="collapse navbar-collapse">                            
                             <img src="img/logo_igreja.png" alt="logo" height="170" class="nav navbar-nav">
                             <ul class="nav navbar-nav">
                                 <li role="presentation" class="active"><a href="">Home</a></li>
-                                <li role="presentation" class="#"><a href="formulario.html">Cadastros dos Membros</a></li>
+                                <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Cadastros
+                                        <b class="caret"></b> </a>
+                                    <ul class="dropdown-menu">
+                                        <li role="presentation" ><a href="formulario.html">Membros</a></li>
+                                        <li role="presentation" ><a href="eventos.html">Eventos</a>
+                                    </ul>
+                                </li>
+                                <li role="presentation" class="#"><a href="formulario.html">Cadastro de Membros</a></li>
                                 <li role="presentation" class="#"><a href="eventos.html">Cadastro de Eventos</a></li>
                                 <li role="presentation" class="#"><a href="buscarMembro.html">Buscar Membro</a></li>
                                 <li role="presentation" class="#"><a href="buscarEventos.html">Buscar Evento</a></li>                        
                             </ul>
-                    <div class="navbar-form navbar-right" role="button">
-                        <div class="form-group">
-                            <a href="#idModal" <button type="button" class="btn btn-default" data-toggle="modal" data-target="#idModal">Logar</button> </a>
+                        <div class="navbar-form navbar-right" role="button">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#idModal">Logar</button>
+                            </div>
                         </div>
-                    </div>
-                            <div class="modal fade" id="idModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <p>Efetue seu Login</p>
-                                        </div>
+                        <div class="modal fade" id="idModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">                                        
+                                    <div class="modal-header">                                          
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                                                ><span aria-hidden="true">&times;</span></button>
+                                        <h4>Efetue seu Login</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table-condensed">
+                                            <tr>
+                                                <td>
+                                                    <label for="login">Login</label>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="login" id="login" class="form-control">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="senha">Senha</label>
+                                                </td>
+                                                <td>
+                                                    <input type="password" name="senha" id="senha" class="form-control">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                        <button type="button" class="btn btn-primary">Logar</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </nav>
