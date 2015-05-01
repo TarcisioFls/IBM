@@ -15,30 +15,31 @@ and open the template in the editor.
     </head>
     <body>
         <section>
-            <header>                
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="collapse navbar-collapse">                            
-                            <img src="img/logo_igreja.png" alt="logo" height="170" class="nav navbar-nav">
-                            <ul class="nav navbar-nav">
-                                <li role="presentation" class="active"><a href="">Home</a></li>
-                                <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Quem Somos
-                                        <b class="caret"></b> </a>
-                                    <ul class="dropdown-menu">
-                                        <li role="presentation" ><a href="#">Nossa História</a></li>
-                                        <li role="presentation" ><a href="#">Missão e Visão</a>
-                                        <li role="presentation" ><a href="#">Liderança</a>    
-                                    </ul>
-                                </li>
-                                <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Cadastros
-                                        <b class="caret"></b> </a>
-                                    <ul class="dropdown-menu">
-                                        <li role="presentation" ><a href="formulario.html">Membros</a></li>
-                                        <li role="presentation" ><a href="eventos.html">Eventos</a>
-                                    </ul>
-                                </li>                                
-                                <li role="presentation" class="#"><a href="buscarMembro.html">Relatório</a></li>
-                            </ul>
+            <div class="nav navbar-default">
+                <a href="index.html"> <img src="img/logo_igreja.png" alt="logo" height="170" class="nav navbar-nav"> </a>
+            </div>                
+            <nav class="navbar-default">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li role="presentation" class="#"><a href="">Home</a></li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Quem Somos
+                                    <b class="caret"></b> </a>
+                                <ul class="dropdown-menu">
+                                    <li role="presentation" ><a href="nossaHistoria.html">Nossa História</a></li>
+                                    <li role="presentation" ><a href="missaoValor.html">Missão e Visão</a>
+                                    <li role="presentation" ><a href="lideranca.html">Liderança</a>    
+                                </ul>
+                            </li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Cadastros
+                                    <b class="caret"></b> </a>
+                                <ul class="dropdown-menu">
+                                    <li role="presentation" ><a href="formulario.html">Membros</a></li>
+                                    <li role="presentation" ><a href="eventos.html">Eventos</a>
+                                </ul>
+                            </li>                                
+                            <li role="presentation" class="#"><a href="buscarMembro.html">Relatório</a></li>
+                        </ul>
                         <div class="navbar-form navbar-right" role="button">
                             <div class="form-group">
                                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#idModal">Logar</button>
@@ -79,12 +80,26 @@ and open the template in the editor.
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </nav>
+            <article>
+                <div id="slide" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#slide" data-slide-to="0" class="active"></li>
+                        <li data-target="#slide" data-slide-to="1"></li>
+                        <li data-target="#slide" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/slide/Fotos-engraçadas-mr-Bean.jpg" alt="Atual">
                         </div>
                     </div>
-                </nav>
-            </header>
-            <article>
-                <h1>1ª Igreja Batista em Muribeca</h1>
+                    <div class="item">
+                        <img src="img/slide/imagens-engracadas-para-whatsapp-10-1024x874.jpg" alt="Proximo">
+                    </div>
+                    
+                </div>
             </article>
         </section>
     </body>
